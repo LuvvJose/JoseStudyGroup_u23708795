@@ -11,11 +11,14 @@ namespace JoseStudyGroup.Models
         [Display(Name = "STUDENT NUMBER")]
         public int StudentNumber { get; set; }
 
-        [Display(Name = "STUDENT NUMBER")]
-        public int StudentNumber { get; set; }
+        [Display(Name = "NAME")]
+        public string FName { get; set; }
 
-        [Display(Name = "STUDENT NUMBER")]
-        public int StudentNumber { get; set; }
+        [Display(Name = "SURNAME")]
+        public string Surname { get; set; }
+
+        [Display(Name = "EMAIL ADDRESS")]
+        public string Email { get; set; }
 
     }
 }
