@@ -10,7 +10,7 @@ namespace JoseStudyGroup.Controllers
     public class StudentController : Controller
     {
         // GET: Student
-        public ActionResult Index()
+        public ActionResult StudentList()
         {
             List<Models.Student> students = new List<Models.Student>();
             {
@@ -20,7 +20,7 @@ namespace JoseStudyGroup.Controllers
                 students.Add(new Models.Student { StudentNumber = 18345689, FName = "Jeff", Surname = "Rizal", Email = "jeff@gmail.com" });
                 students.Add(new Models.Student { StudentNumber = 28658477, FName = "Andres", Surname = "Bonifacio", Email = "Andres@gmail.com" });
 
-                return View();
+                return View(students);
             }
         }
     }

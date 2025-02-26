@@ -1,0 +1,45 @@
+﻿@model IEnumerable<JoseStudyGroup.Models.Student>
+
+@{
+    ViewBag.Title = "Student";
+}
+
+<h2>Student</h2>
+
+
+<h2>Student List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.StudentNumber)</th>  <!-- Display label for StudentNumber -->
+            <th>@Html.DisplayNameFor(model => model.FName)</th>         <!-- Display label for First Name -->
+            <th>@Html.DisplayNameFor(model => model.Surname)</th>        <!-- Display label for Surname -->
+            <th>@Html.DisplayNameFor(model => model.Email)</th>          <!-- Display label for Email -->
+        </tr>
+    </thead>
+
+
+
+
+    @foreach (var item in Model) //For each person
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+          
+        </tr>
+    }
+
+
+</table>
