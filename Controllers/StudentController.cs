@@ -19,6 +19,7 @@ namespace JoseStudyGroup.Controllers
                 students.Add(new Models.Student { StudentNumber = 23708795, FName = "Jose", Surname = "Edu", Email = "jose@tuks.co.za" });
                 students.Add(new Models.Student { StudentNumber = 18345689, FName = "Jeff", Surname = "Rizal", Email = "jeff@gmail.com" });
                 students.Add(new Models.Student { StudentNumber = 28658477, FName = "Andres", Surname = "Bonifacio", Email = "Andres@gmail.com" });
+                
 
                 return View(students);
             }
